@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de formulario avanzado</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        form {
+            margin: 0 auto;
+            width: 300px;
+        }
+        label, input, textarea, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Formulario avanzado</h3>
+    <form action="http://....." method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre del producto</label> <br/>
+            <input type="text" id="nombre" name="nombre" value="" />
+            <label for="descripcion">Descripción del producto</label>
+            <br/>
+            <textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sistema operativo</legend>
+            <label for="so">Sistema operativo</label> <br/>
+            <select id="so" name="so">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="so2">Sistema operativo</label> <br/>
+            <select id="so2" name="so2" size="5">
+                <option value="windows" selected="selected">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+            <label for="so3">Sistema operativo</label> <br/>
+            <select id="so3" name="so3" size="5" multiple="multiple">
+                <option value="windows" selected="selected">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+                <option value="otro">Otro</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
